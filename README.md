@@ -5,11 +5,10 @@ Projeto Front-end Web - Eccomerce 🛒🛍️
 Exercício de seleção 4all - carrinho de compras
  </h1>
 
-[Deploy da aplicação](http://4all-cart.surge.sh/)
 
 ## Gif:
 
-<img src="./"/>
+<img src="./assets/processo-4all"/>
 
 ---
 
