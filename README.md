@@ -24,11 +24,15 @@ Exercício de seleção 4all - carrinho de compras
 
 ## Principais tecnologias utilizadas:
 
-1. React.JS;
+1. [ReactJS](https://reactjs.org/)
 2. Estilização com CSS e styled-components
 3. Uso de bibliotecas de UI (MaterialUI)
 4. Aplicações com múltiplas rotas utilizando React Router
 ---
+
+### IDE
+
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 
 ## Escopo do projeto
@@ -65,31 +69,39 @@ realizada com sucesso.
 
 ## Como rodar a aplicação
 
-No terminal, clone o projeto:
+Para copiar o projeto, utilize os comandos:
 
-```
-git clone
-```
+```bash
+  # Clonar o repositório
+  ❯ git clone https://github.com/future4code/mello-4eddit3.git
 
-Entre na pasta do projeto:
-
-```
-cd ecommerce4all
+  # Entrar no diretório
+  ❯ cd mello-4eddit3
 ```
 
-Instale as dependências:
+Para instalar as dependências e iniciar o projeto, você pode utilizar o Yarn ou NPM:
 
-```
-npm install
+**Utilizando yarn**
+
+```bash
+  # Instalar as dependências
+  ❯ yarn
+
+  # Iniciar o projeto
+  ❯ yarn dev:server
 ```
 
-Execute a aplicação:
+**Utilizando npm**
 
-```
-npm start
-```
+_PS: Caso utilize o NPM, apague o arquivo `yarn.lock` para ter todas as dependências instaladas da melhor forma._
 
-<br>
+```bash
+  # Instalar as dependências
+  ❯ npm install
+
+  # Iniciar o projeto
+  ❯ npm start
+```
 
 ---
 ## Contribuição
