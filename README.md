@@ -37,7 +37,7 @@ Exercício de seleção 4all - carrinho de compras
 
 ## Escopo do projeto
 
-O Objetivo era criar uma plataforma de eccomerce simples com duas telas;
+O Objetivo era criar uma plataforma de ecommerce simples com duas telas;
 <ul>
 <p><b>Na  primeira tela </b>:</p>
 <li> Lista de produtos </li>
@@ -73,7 +73,7 @@ Para copiar o projeto, utilize os comandos:
 
 ```bash
   # Clonar o repositório
-  ❯ git clone https://github.com/future4code/mello-4eddit3.git
+  ❯ git clone https://github.com/TatianaFischer/ecommerce4all.git
 
   # Entrar no diretório
   ❯ cd ecommerce4all
@@ -139,7 +139,7 @@ git push origin feature
 <br>
 
 ## 🚀 Projeto no ar
-http://4eddit.tkj.surge.sh/
+
 
 <h4 align="center">
   Feito por Tatiana Fischer  💛
