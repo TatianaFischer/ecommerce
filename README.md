@@ -1,5 +1,5 @@
 <h1 align="center">
-Projeto Front-end Web - Eccomerce 🛍️
+Projeto Front-end Web - Eccomerce 🛒🛍️
 </h1>
 <h1 align="center">
 Exercício de seleção 4all - carrinho de compras
@@ -10,15 +10,15 @@ Exercício de seleção 4all - carrinho de compras
 ## Gif:
 
 <img src="./"/>
-
+---
 ## Principais tecnologias utilizadas:
 
 1. React.JS;
 2. Estilização com CSS e styled-components
 3. Uso de bibliotecas de UI (MaterialUI)
 4. Aplicações com múltiplas rotas utilizando React Router
+---
 
-<br>
 
 ## Escopo do projeto
 
@@ -50,7 +50,7 @@ da tela do carrinho e voltar a primeira tela.
 > Ao finalizar a compra irá aparecer um modal informando o usuário que a compra foi
 realizada com sucesso.
 
-<br>
+---
 
 ## Como rodar a aplicação
 
@@ -79,7 +79,8 @@ npm start
 ```
 
 <br>
-
+---
+---
 ## Contribuição
 
 Contribuições com o projeto são muito apreciadas. Para isso:
