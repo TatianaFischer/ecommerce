@@ -10,7 +10,8 @@ Exercício de seleção 4all - carrinho de compras
 ## Gif:
 
 <img src="./"/>
----
+
+
 ## Principais tecnologias utilizadas:
 
 1. React.JS;
@@ -79,7 +80,7 @@ npm start
 ```
 
 <br>
----
+
 ---
 ## Contribuição
 
