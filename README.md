@@ -1,5 +1,5 @@
 <h1 align="center">
-Projeto Front-end Web - Eccomerce 🛒🛍️
+Projeto Front-end Web - Ecommerce 🛒🛍️
 </h1>
 <h1 align="center">
 Exercício de seleção 4all - carrinho de compras
@@ -8,7 +8,8 @@ Exercício de seleção 4all - carrinho de compras
 
 ## Gif:
 
-<img src="./assets/processo-4all"/>
+<img alt="Gif da Aplicação" src="./src/midia/processo-4all.gif"/>
+
 
 ---
 
@@ -75,7 +76,7 @@ Para copiar o projeto, utilize os comandos:
   ❯ git clone https://github.com/future4code/mello-4eddit3.git
 
   # Entrar no diretório
-  ❯ cd mello-4eddit3
+  ❯ cd ecommerce4all
 ```
 
 Para instalar as dependências e iniciar o projeto, você pode utilizar o Yarn ou NPM:
