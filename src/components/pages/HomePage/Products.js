@@ -3,7 +3,7 @@ import {
     ProductLine,
     ProductImage,
     CategorySelector
-} from "../pages/HomePage/styles";
+} from "./styles";
 import Button from '@material-ui/core/Button';
 
   

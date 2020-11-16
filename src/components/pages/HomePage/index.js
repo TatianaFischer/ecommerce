@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {Link} from "react-router-dom"
 import Header from "../../Header/Header"
-import Filter from "../../Filter"
+import Products from "./Products"
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 import {
@@ -84,7 +84,7 @@ function HomePage(props){
                 </Link>                    
             </HomeHeaderContainer>
           
-            <Filter  
+            <Products  
             category={category} setCategory={setCategory} 
             products={products} setProducts={setProducts} 
             cartLength={cartLength} setCartLength={setCartLength} 
