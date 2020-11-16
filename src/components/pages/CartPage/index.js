@@ -1,9 +1,8 @@
-
 import React from "react";
 import CartPageHeader from "./CartPageHeader";
 import CartProducts from "./CartProducts";
 import TotalPrice from "./TotalPrice";
-import CartModal from "../../CartModal";
+import CartModal from "./CartModal";
 import {   
     CartPageContainer,
     CartProductsTableContainer,   
@@ -30,6 +29,7 @@ const CartPage = (props) => {
 };
 
 export default CartPage;
+
 
 
 
