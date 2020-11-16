@@ -7,7 +7,7 @@ import {
 import Button from '@material-ui/core/Button';
 
   
-function Filter(props){
+function Products(props){
    
     const handleInputChange = (e) => {
         props.setCategory(e.target.value);
@@ -83,4 +83,4 @@ function Filter(props){
     );
 }
 
-export default Filter;
+export default Products;
