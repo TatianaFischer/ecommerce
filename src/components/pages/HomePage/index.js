@@ -1,14 +1,9 @@
-import React, {useState} from 'react'
-import {Link} from "react-router-dom"
-import Header from "../../Header/Header"
-import Products from "./Products"
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import React, {useState} from 'react';
+import HomePageHeader from "./HomePageHeader";
+import Products from "./Products";
 
 import {
-    HomePageContainer,
-    HomeHeaderContainer,  
-    QuantityOfProducts,
-    CountingCartContainer,
+    HomePageContainer,   
 } from "./styles";
 
   
@@ -16,7 +11,7 @@ function HomePage(props){
     
   
     const [cartLength, setCartLength] = useState([])
-
+    const [category, setCategory] = useState("");
     const [products, setProducts] = useState([{
   
           "id": 0,
@@ -70,19 +65,13 @@ function HomePage(props){
   
     ]);
  
-    const [category, setCategory] = useState("");
+    
       
     return(
-        <HomePageContainer>
-            <HomeHeaderContainer>
-                <Header/> 
-                <Link to={`/cart`} style={{position: "relative"}}>
-                    <CountingCartContainer>
-                        <ShoppingCartIcon />
-                        <QuantityOfProducts>{cartLength.length}</QuantityOfProducts>
-                    </CountingCartContainer>
-                </Link>                    
-            </HomeHeaderContainer>
+        <HomePageContainer>           
+            <HomePageHeader 
+            cartLength={cartLength} setCartLength={setCartLength}
+            />
           
             <Products  
             category={category} setCategory={setCategory} 
