@@ -18,29 +18,6 @@ export const HomeHeaderContainer = styled.div`
   margin-bottom: 40px;
   border-bottom: 1px solid rgb(0,0,0,0.5);
 `
-export const CountingCartContainer = styled.div`
-  width: 60px;
-  height: 50px;
-  padding-top: 15px;
-  position: sticky;
-`
-export const QuantityOfProducts = styled.span`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 15px;
-  background-color: rgb(210,29,29,0.8);
-  color: white;
-  border-radius: 100%;
-  width: 25px;
-  height: 25px;
-  margin: 0px;
-
-  position: absolute;
-  right: 15px;
-  top: 5px;
-`
 
 export const CategorySelector = styled.select`
   width: 50vw;
@@ -66,4 +43,28 @@ export const ProductLine = styled.li`
 export const ProductImage = styled.img`
   width: 125px;
   height: 100px;
+`
+
+export const CountingCartContainer = styled.div`
+  width: 60px;
+  height: 50px;
+  padding-top: 15px;
+  position: sticky;
+`
+export const QuantityOfProducts = styled.span`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 15px;
+  background-color: rgb(210,29,29,0.8);
+  color: white;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  margin: 0px;
+
+  position: absolute;
+  right: 15px;
+  top: 5px;
 `
