@@ -1,11 +1,9 @@
 /* eslint-disable no-restricted-globals */
 import React from "react";
-import {Link, useHistory} from "react-router-dom"
-import Header from "../../Header/Header";
+import {useHistory} from "react-router-dom";
+import CartPageHeader from "./CartPageHeader";
 import CartModal from "../../CartModal"
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import {    
-    CartHeaderContainer,
+import {   
     CartPageContainer,
     CartProductsTableContainer,
     CartProductsTable,
@@ -78,16 +76,8 @@ const CartPage = (props) => {
       
     
     return (
-        <CartPageContainer>
-            <CartHeaderContainer>
-               <Link to={`/`} ><ArrowBackIosIcon/></Link>  
-             
-               <Header/> 
-            </CartHeaderContainer>
-          
-          
-             <h1>Finalizar Pedido</h1>
-
+        <CartPageContainer>            
+            <CartPageHeader/>
             <CartProductsTableContainer>
                 <h6>
                     Revise os seus itens:
