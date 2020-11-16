@@ -139,7 +139,7 @@ git push origin feature
 <br>
 
 ## 🚀 Projeto no ar
-http://secret-tongue.surge.sh/
+ecommerce4all.surge.sh
 
 <h4 align="center">
   Feito por Tatiana Fischer  💛
