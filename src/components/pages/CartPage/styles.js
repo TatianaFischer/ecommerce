@@ -43,7 +43,7 @@ export const CartProductsTable = styled.div`
   border: 1px solid rgb(0,0,0,0.5);
 `
 
-export const TotalPrice = styled.div`
+export const TotalPriceContainer = styled.div`
  display: flex; 
   flex-direction: row;
   justify-content: space-between; 
