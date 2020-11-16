@@ -74,7 +74,7 @@ function Products(props){
       
         <>       
             <CategorySelector onChange={handleInputChange} defaultValue={""}>
-                <option value={""}>Todas as catergorias</option>
+                <option value={""}>Todas as categorias</option>
                 {filterdProducts}
             </CategorySelector>
             
