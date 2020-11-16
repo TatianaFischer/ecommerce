@@ -28,7 +28,7 @@ export const CartProductsTableContainer = styled.div`
   justify-content: start; 
 
 
-  width: 50vw;
+  width: 80vw;
   height: auto;
 `
 

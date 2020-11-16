@@ -46,7 +46,7 @@ function HomePage(props){
           "id": 2,
           "category": "Bebidas",
           "name": "Suco Rosa",
-          "description": "Suco de morango 500ml",
+          "description": "Suco de 500ml",
           "price": 10.00,
           "image": "https://cdn.pixabay.com/photo/2020/07/09/22/23/fruit-juice-5388892_1280.jpg",
           "quantity": 0
@@ -66,7 +66,7 @@ function HomePage(props){
           "id": 4,
           "category": "Verduras",
           "name": "Cenoura",
-          "description": "Cenoura Orgânica 1 molho",
+          "description": "Cenoura 1 molho",
           "price": 3.50,
           "image": "https://cdn.pixabay.com/photo/2018/02/25/08/56/carrot-3179988_1280.jpg",
           "quantity": 0

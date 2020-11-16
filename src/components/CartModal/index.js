@@ -21,10 +21,10 @@ function getModalStyle() {
 const useStyles = makeStyles((theme) => ({
   paper: {
     position: 'absolute',
-    width: 400,
-    height: 200,
+    width: 200,
+    height: 250,
     backgroundColor: theme.palette.background.paper,
-    border: '2px solid #000',
+    border: '1px solid #000',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3)
     
@@ -55,7 +55,7 @@ export default function CartModal() {
     <div style={modalStyle} className={classes.paper}>
         <CheckCircleRoundedIcon fontSize="large"/>
       <h2 id="simple-modal-title">Pedido realizado com sucesso!</h2>
-     <Button variant="contained" onClick={backToHome}>Voltar para a Loja</Button>
+     <Button variant="contained" size="small" onClick={backToHome}>Voltar para a Loja</Button>
 
     </div>
   );
