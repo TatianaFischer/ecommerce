@@ -1,25 +1,21 @@
 import React, {useState} from 'react'
 import {Link} from "react-router-dom"
 import Header from "../../Header/Header"
+import Filter from "../../Filter"
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 import {
     HomePageContainer,
-    HomeHeaderContainer,
-    ProductLine,
-    ProductImage,
+    HomeHeaderContainer,  
     QuantityOfProducts,
     CountingCartContainer,
-    CategorySelector
-  } from "./styles";
-
-  import Button from '@material-ui/core/Button';
+} from "./styles";
 
   
 function HomePage(props){
     
   
-    const [cartLength, setcartLength] = useState([])
+    const [cartLength, setCartLength] = useState([])
 
     const [products, setProducts] = useState([{
   
@@ -75,74 +71,7 @@ function HomePage(props){
     ]);
  
     const [category, setCategory] = useState("");
-
-    const handleInputChange = (e) => {
-        setCategory(e.target.value);
-    };
-    
-   
-    function addToCart(id) {
-        
-        
-        setcartLength([...cartLength, id]);      
-
-        const findProductIndex = products.findIndex((p) => p.id === id);
-        const findProductCartIndex = props.cartItems.findIndex((p) => p.id === id);
-                //se encontrar ids iguais: retorna o index do producto
-                //se não encontrar ids iguais retorna -1     
-        if (findProductCartIndex !== -1) {
-                //se encontrar dentro do carrinho o ID igual, 
-                //acrescenta +1 na quantidade do produto enontrado que já está no carrinho
-                //mantendo o carrinho igual
-          props.cartItems[findProductCartIndex].quantity += 1;
-                 
-          props.setCartItems([...props.cartItems]);
-        
-          
-        } else {
-                //se não encontrar dentro do carrinho, 
-                //vai procurar dentro da lista de produtos o index daquele ID, 
-                //acrescentar +1 e adicionar aquele produto ao carrinho.
-            products[findProductIndex ].quantity += 1;
-            props.setCartItems([...props.cartItems, products[findProductIndex ]]);
       
-            }
-      }
-
- 
-    const renderProducts = 
-    
-        products.filter(product => category? product.category === category: true)
-        .map((product) => (         
-         
-            <ul key={product.id}>
-                <ProductLine > 
-                    <ProductImage alt={product.name} src={product.image}/>
-                    <p> {product.name}</p> -
-                    <p>{product.description}</p> -
-                    <p>R$ {product.price}</p>
-                    
-                    <Button 
-                        variant="contained" 
-                        disableElevation 
-                        size="small" 
-                        onClick={()=> addToCart(product.id)}
-                        >Adicionar
-                    </Button>
-
-                </ProductLine>         
-            
-
-            </ul>
-        ));
-
-     const filterdProducts = products
-        .filter((productA, index, arr) => index === arr.findIndex((productB) => productA.category === productB.category) )
-        .map(item => (
-            <option key={item.id} value={item.category}>{item.category}</option>
-        ));
-    
-
     return(
         <HomePageContainer>
             <HomeHeaderContainer>
@@ -154,15 +83,13 @@ function HomePage(props){
                     </CountingCartContainer>
                 </Link>                    
             </HomeHeaderContainer>
-
           
-
-            <CategorySelector onChange={handleInputChange} defaultValue={""}>
-                <option value={""}>Todas as catergorias</option>
-                {filterdProducts}
-            </CategorySelector>
-            
-            {renderProducts}
+            <Filter  
+            category={category} setCategory={setCategory} 
+            products={products} setProducts={setProducts} 
+            cartLength={cartLength} setCartLength={setCartLength} 
+            cartItems={props.cartItems} setCartItems={props.setCartItems}
+            />
         </HomePageContainer>
         
     );

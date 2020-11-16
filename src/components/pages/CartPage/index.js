@@ -14,10 +14,7 @@ import {
   import AddCircleIcon from '@material-ui/icons/AddCircle';
   import RemoveCircleIcon from '@material-ui/icons/RemoveCircle'; 
   import DeleteIcon from '@material-ui/icons/Delete';
-
-
-
-  
+ 
 
 const CartPage = (props) => {
     const history = useHistory();
