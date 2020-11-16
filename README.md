@@ -1,5 +1,5 @@
 <h1 align="center">
-Projeto Front-end Web - Ecommerce 🛒🛍️
+Projeto Front-end Web - E-commerce 🛒🛍️
 </h1>
 <h1 align="center">
 Exercício de seleção 4all - carrinho de compras
